@@ -1,13 +1,13 @@
 ## Metacoin
 
-A simple example project to test [ethereum/source-verify][1]'s chain monitor.
+Simple project to test [ethereum/source-verify][1]'s chain monitor.
 
-+ compiles the Metacoin contracts with `truffle compile`
-+ uploads the generated metadata and corresponding Solidity sources to ipfs (via Infura gateway)
++ compiles Truffle's metacoin contracts with `truffle compile`
++ uploads the generated metadata and corresponding Solidity sources to IPFS (via Infura gateway)
 + deploys to either Ropsten or Rinkeby
 
-If running a source-verify instance you should see entries saved to the
-repository for the contract addresses displayed in the truffle migrations output.
+A running source-verify monitor will auto-detect this deployment and save entries to the
+metadata repository for the chain / addresses displayed in the Truffle migrations output.
 
 [1]: https://github.com/ethereum/source-verify
 
@@ -18,9 +18,9 @@ npm install
 
 ## Configure
 
-You must create a `.env` file in the project root and set values for
+You'll need to create a `.env` file in the project root and set values for
 + an Infura project ID
-+ a private key for an account with a testnet ether balance
++ the private key to an account with a testnet ether balance
 
 ```
 INFURA_ID=1d13168ffb894ad2827f...
