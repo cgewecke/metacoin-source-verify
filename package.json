@@ -1,0 +1,32 @@
+{
+  "name": "metacoin-source-verify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "ipfs": "node --no-warnings ./scripts/ipfs.js",
+    "deploy:ropsten": "truffle compile --all && npm run ipfs && truffle migrate --network ropsten",
+    "deploy:rinkeby": "truffle compile --all && npm run ipfs && truffle migrate --network rinkeby"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgewecke/metacoin-source-verify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgewecke/metacoin-source-verify/issues"
+  },
+  "homepage": "https://github.com/cgewecke/metacoin-source-verify#readme",
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.0.31",
+    "dotenv": "^8.2.0",
+    "ipfs-http-client": "^42.0.0",
+    "shelljs": "^0.8.3",
+    "truffle": "^5.1.14"
+  }
+}
