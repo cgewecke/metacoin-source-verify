@@ -22,7 +22,7 @@ const config = {
       skipDryRun: true
     },
     goerli: {
-      provider: () => new HDWalletProvider(privateKey, rinkebyInfura),
+      provider: () => new HDWalletProvider(privateKey, goerliInfura),
       network_id: 5,
       gas: 5500000,
       skipDryRun: true
