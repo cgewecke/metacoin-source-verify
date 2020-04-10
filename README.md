@@ -33,6 +33,7 @@ Your choice of:
 ```
 npm run deploy:ropsten
 npm run deploy:rinkeby
+npm run deploy:goerli
 ```
 
 **Example Output**

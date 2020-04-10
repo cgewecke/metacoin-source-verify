@@ -9,7 +9,8 @@
   "scripts": {
     "ipfs": "node --no-warnings ./scripts/ipfs.js",
     "deploy:ropsten": "truffle compile --all && npm run ipfs && truffle migrate --network ropsten",
-    "deploy:rinkeby": "truffle compile --all && npm run ipfs && truffle migrate --network rinkeby"
+    "deploy:rinkeby": "truffle compile --all && npm run ipfs && truffle migrate --network rinkeby",
+    "deploy:goerli": "truffle compile --all && npm run ipfs && truffle migrate --network goerli"
   },
   "repository": {
     "type": "git",
